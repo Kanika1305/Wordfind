@@ -1,3 +1,6 @@
+
+![word](https://github.com/Kanika1305/Wordfind/blob/main/wf.png)
+
 # WordFind Game
 
 ## Description
