@@ -24,8 +24,23 @@ WordFind is a simple word puzzle game where players need to find and guess words
 ## Requirements
 - C compiler (e.g., GCC) to compile the source code.
 - Standard input/output for user interaction.
+- ## Techologies Used:
+C language
+
+## Contributing
+
+Contributions are welcome! If you have any ideas for improvements, open an issue or create a pull request.
+
+
+## Author:
+Kanika Chauhan
+
+## Contacts:
+Email- kanika13c@gmail.com
 
 ## Example Usage
 ```bash
 gcc WordFind.c -o WordFind
 ./WordFind
+
+
