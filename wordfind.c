@@ -32,7 +32,7 @@ if(mode==1){
          goto g;
         }  
     }
-printf("*NOT a Valid Word*\n");
+printf("*NOT a Valid Word*/*Already Guessed*\n");
 printf("<<Wanna Give up?......... (YES/NO)?>>\n"); 
 scanf("%s",gp);
 if(strcmp(gp,"YES")==0) goto giveup; else goto g;
@@ -58,7 +58,7 @@ if(mode==2)
          goto g2;
         }  
     }
-printf("*NOT a Valid Word*\n");
+printf("*NOT a Valid Word*/*Already Guessed*\n");
 printf("<<Wanna Give up?......... (YES/NO)?>>\n"); 
 scanf("%s",gp2);
 if(strcmp(gp2,"YES")==0) goto giveup; else goto g2;
@@ -84,7 +84,7 @@ if(mode==3)
          goto g3;
         }  
     }
-printf("*NOT a Valid Word*\n");
+printf("*NOT a Valid Word*/*Already Guessed*\n");
 printf("<<Wanna Give up?......... (YES/NO)?>>\n"); 
 scanf("%s",gp3);
 if(strcmp(gp3,"YES")==0) goto giveup; else goto g3;
