@@ -20,6 +20,8 @@ if(mode==1){
     int c=0;char gp[5];
     printf("O,G,D\n");
     g:
+    
+    printf("Guess the word:\n");
     scanf("%s",guess1);
     for(int i=0;i<4;i++)
     {        
@@ -33,9 +35,9 @@ if(mode==1){
         }  
     }
 printf("*NOT a Valid Word*/*Already Guessed*\n");
-printf("<<Wanna Give up?......... (YES/NO)?>>\n"); 
+printf("<<Wanna Give up.........? (YES/NO)?>>\n"); 
 scanf("%s",gp);
-if(strcmp(gp,"YES")==0) goto giveup; else goto g;
+if(strcmp(gp,"YES")==0||strcmp(gp,"yes")==0) goto giveup; else goto g;
 lvl2 : 
 printf("YOU HAVE CLEARED THIS STAGE!!\n");
 }
@@ -46,6 +48,7 @@ if(mode==2)
     int c2=0;char gp2[5];
     printf("W,D,O,R\n");
     g2:
+    printf("Guess the word:\n");
     scanf("%s",guess2);
     for(int i=0;i<7;i++)
     {        
@@ -61,7 +64,7 @@ if(mode==2)
 printf("*NOT a Valid Word*/*Already Guessed*\n");
 printf("<<Wanna Give up?......... (YES/NO)?>>\n"); 
 scanf("%s",gp2);
-if(strcmp(gp2,"YES")==0) goto giveup; else goto g2;
+if(strcmp(gp2,"YES")==0||strcmp(gp2,"yes")==0) goto giveup; else goto g2;
 lvl3 : 
 printf("YOU HAVE CLEARED THIS STAGE!!\n"); 
 }
@@ -72,6 +75,8 @@ if(mode==3)
     int c3=0;char gp3[5];
     printf("P,Z,I,E,R\n");
     g3:
+    
+    printf("Guess the word:\n");
     scanf("%s",guess3);
     for(int i=0;i<12;i++)
     {        
@@ -85,16 +90,16 @@ if(mode==3)
         }  
     }
 printf("*NOT a Valid Word*/*Already Guessed*\n");
-printf("<<Wanna Give up?......... (YES/NO)?>>\n"); 
+printf("<<Wanna Give up.........? (YES/NO)?>>\n"); 
 scanf("%s",gp3);
-if(strcmp(gp3,"YES")==0) goto giveup; else goto g3;
+if(strcmp(gp3,"YES")==0||strcmp(gp3,"yes")==0) goto giveup; else goto g3;
 lvl4 : 
 printf("YOU HAVE CLEARED THIS STAGE!!\n"); 
 }  
 giveup:
-printf("THANKS FOR PLAYING ^_^1!\n");
-printf("<<Do you wanna play again?.....YES/NO>>\n");
+printf("THANKS FOR PLAYING ^_^!\n");
+printf("<<Do you wanna play again?.....(YES/NO)?>>\n");
 scanf("%s",gp4);
-if(strcmp(gp4,"YES")==0) goto again; else printf("Hope you enjoyed!\n");
+if(strcmp(gp4,"YES")==0||strcmp(gp4,"yes")==0) goto again; else printf("Hope you enjoyed!\n");
 return 0;
 }
