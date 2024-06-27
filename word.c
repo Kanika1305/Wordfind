@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 #include<string.h>
 int main()
@@ -100,6 +101,8 @@ giveup:
 printf("THANKS FOR PLAYING ^_^!\n");
 printf("<<Do you wanna play again?.....(YES/NO)?>>\n");
 scanf("%s",gp4);
+            printf("\033[2J");
+
 if(strcmp(gp4,"YES")==0||strcmp(gp4,"yes")==0) goto again; else printf("Hope you enjoyed!\n");
 return 0;
 }
